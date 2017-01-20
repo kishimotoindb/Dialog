@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //1.测试dialog主题的window属性
+
+    <style name="MyDialogTheme" parent="AlertDialog.AppCompat">
+        <!--<item name="android:windowFrame">@null</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--通过设置这里的layout属性可以实现dialog边缘与屏幕边缘的距离设置-->
+        <!--但是有个问题,这里的非window属性,会应用到dialog中所有的控件上,不仅仅只影响dialog边框本身-->
+        <!--<item name="android:layout_gravity">bottom</item>-->
+        <!--<item name="android:layout_marginBottom">100dp</item>-->
+        <!--<item name="android:layout_marginLeft">100dp</item>-->
+    </style>
+
+</resources>
